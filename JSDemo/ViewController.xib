@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="mWebV" destination="IMt-mK-Hbx" id="u2F-Gl-nEC"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hFx-gl-JCw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4t-MB-gfo">
+                    <rect key="frame" x="15" y="80" width="290" height="50"/>
+                    <color key="backgroundColor" red="0.96224462990000004" green="0.466122651" blue="0.47612481220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9a5-kK-R0x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="点我访问JS">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onOpenJS:" destination="-1" eventType="touchUpInside" id="UuU-6R-PPQ"/>
+                    </connections>
+                </button>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMt-mK-Hbx" customClass="EasyJSWebView">
+                    <rect key="frame" x="0.0" y="180" width="320" height="418"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Riw-Cu-3h5"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IMt-mK-Hbx" secondAttribute="trailing" id="3ER-Fg-LiN"/>
+                <constraint firstItem="IMt-mK-Hbx" firstAttribute="top" secondItem="q4t-MB-gfo" secondAttribute="top" constant="100" id="BX9-an-93h"/>
+                <constraint firstItem="q4t-MB-gfo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="Ca1-gy-fL0"/>
+                <constraint firstItem="q4t-MB-gfo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="RYH-nA-rrF"/>
+                <constraint firstAttribute="trailing" secondItem="q4t-MB-gfo" secondAttribute="trailing" constant="15" id="bbd-hf-2Nq"/>
+                <constraint firstItem="IMt-mK-Hbx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oGM-OE-lbC"/>
+                <constraint firstAttribute="bottom" secondItem="IMt-mK-Hbx" secondAttribute="bottom" constant="-30" id="rcH-JC-d7a"/>
+            </constraints>
+            <point key="canvasLocation" x="305" y="433"/>
+        </view>
+    </objects>
+</document>

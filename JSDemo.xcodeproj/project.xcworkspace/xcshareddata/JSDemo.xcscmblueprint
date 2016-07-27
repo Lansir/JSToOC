@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "62EC601F89B2C37E931F49BB89B8063A11DA6E17",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "30B748B44A438510D851F9153A37596FE6ACEB46" : 0,
+    "62EC601F89B2C37E931F49BB89B8063A11DA6E17" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3A75AC35-0EA3-4098-ABB9-0A2555700B33",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "30B748B44A438510D851F9153A37596FE6ACEB46" : "",
+    "62EC601F89B2C37E931F49BB89B8063A11DA6E17" : "JSDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JSDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JSDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Lansir\/JSDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30B748B44A438510D851F9153A37596FE6ACEB46"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Lansir\/Demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "62EC601F89B2C37E931F49BB89B8063A11DA6E17"
+    }
+  ]
+}

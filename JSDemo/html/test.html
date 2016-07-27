@@ -1,0 +1,28 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=320.1,height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+            <script type="text/javascript">
+
+               window.h5CallAppBack = function(action,result,token){
+                    alert('app 回调');
+                    alert('方法: ' + action);
+                    alert('参数: ' + result);
+                }
+                window.h5CallAppBack('方法名', '参数名');
+                </script>
+    </head>
+    
+    <body>
+        <button id="but" style="margin-top:120px; margin-left:50px;height: 43px;line-height: 43px;background: #0FC2EC;display: block;width: 40%;text-align: center;color: #fff;white-space: nowrap;font-weight: bold;overflow: hidden;" onclick="buttonClick()">点我访问app方法</button>
+        <script type="text/javascript">
+            var buttonClick = function(){
+                 window.test.h5CallAppAnd2And3("param1", "{'key1':'value1','key2':'value2','key3':'value3','key4':'value4','key5':'value5'}", "param3");
+            }
+            </script>
+    </body>
+</html>
